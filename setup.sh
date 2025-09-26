@@ -40,7 +40,7 @@ IFACE="${2:-}"
 # --------- STEP 0: Dependencies ---------
 echo "=== Installing required dependencies ==="
 sudo apt update
-sudo apt install -y curl gnupg apt-transport-https network-manager wireless-tools
+sudo apt install -y curl gnupg apt-transport-https network-manager wireless-tools iw
 
 if ! command -v nmcli >/dev/null; then
     echo "❌ nmcli not found even after install. Please install NetworkManager manually."
